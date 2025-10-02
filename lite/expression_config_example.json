@@ -1,0 +1,72 @@
+{
+  "description": "Example configuration for Vector Expression Generator",
+  "presets": {
+    "portrait_session": {
+      "base_prompt": "portrait photo, professional lighting, high quality",
+      "negative_prompt": "low quality, blurry, distorted",
+      "expressions": [
+        "neutral",
+        "smiling",
+        "happy",
+        "laughing"
+      ],
+      "seed": 12345,
+      "steps": 30,
+      "cfg_scale": 7.5
+    },
+    "emotion_study": {
+      "base_prompt": "character study, detailed face, concept art",
+      "negative_prompt": "low quality, deformed",
+      "expressions": [
+        "neutral",
+        "happy",
+        "sad",
+        "angry",
+        "surprised",
+        "fearful"
+      ],
+      "seed": 67890,
+      "steps": 40,
+      "cfg_scale": 8.0
+    },
+    "animation_sequence": {
+      "base_prompt": "anime character, detailed, vibrant colors",
+      "negative_prompt": "low quality, western cartoon",
+      "start_expression": "neutral",
+      "end_expression": "very_happy",
+      "num_frames": 10,
+      "seed": 11111,
+      "steps": 35,
+      "cfg_scale": 7.0
+    }
+  },
+  "custom_expressions": {
+    "thoughtful": {
+      "happiness": 0.0,
+      "sadness": 0.2,
+      "anger": 0.0,
+      "surprise": 0.0,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "neutral": 0.8
+    },
+    "determined": {
+      "happiness": 0.0,
+      "sadness": 0.0,
+      "anger": 0.3,
+      "surprise": 0.0,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "neutral": 0.7
+    },
+    "playful": {
+      "happiness": 0.7,
+      "sadness": 0.0,
+      "anger": 0.0,
+      "surprise": 0.3,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "neutral": 0.0
+    }
+  }
+}
